@@ -1,0 +1,121 @@
+{
+	"cartItem": [
+        {
+            "action": "add",
+            "quantity": 1,
+            "status": "active",
+            "id": "110",
+            "itemPrice": [
+                {
+                    "description": "Total Recurring Price.",
+                    "name": "Monthly Price",
+                    "priceType": "recurring",
+                    "recurringChargePeriod": "month",
+                    "price": {
+                        "taxRate": 10,
+                        "dutyFreeAmount": {
+                            "unit": "EUR",
+                            "value": 29
+                        },
+                        "taxIncludedAmount": {
+                            "unit": "EUR",
+                            "value": 31.9
+                        }
+                    },
+                    "priceAlteration": [
+                        {
+                            "applicationDuration": 3,
+                            "description": "First 3 month get 50% off",
+                            "name": "WelcomeDiscount",
+                            "priceType": "recurring",
+                            "priority": 1,
+                            "recurringChargePeriod": "month",
+                            "price": {
+                                "percentage": 50
+                            }
+                        }
+                    ],
+                    "productOfferingPrice": {
+                        "id": "1788",
+                        "href": "https://mycsp.com:8080/tmf-api/productCatalogManagement/v4/productOfferingPrice/1788",
+                        "name": "Recurring Monthly Price for Talk Simple 25"
+                    }
+                }
+            ],
+            "itemTerm": [
+                
+            ],
+			"note": [
+                {
+                    "id": "0",
+                    "author": "Jack Smith",
+                    "date": "2019-05-28T12:02:41.791Z",
+                    "text": "InvoiceAccount : 23654789"
+                }
+            ],
+            "product": {
+                "isBundle": false,
+                "name": "Talk Simple 25 - Weekend Add-on",
+                "productCharacteristic": [
+                    {
+                        "name": "TEL_MSISDN",
+                        "valueType": "string",
+                        "value": "415 279 7439"
+                    }
+                ],
+				"productSpecification":{
+					"id":123
+				},
+				"productRelationship": [
+					{
+						"@type": "productOfferingRelationship",
+						"relationshipType": "componentOf",
+						"product":{
+                            "id": "133648", /* inventory product ID of the containing bundle */
+                            "href" : "https://dev.dnext-vfal.com/productInventory/v4/product/133648"
+                        }
+					},
+				],
+				"productTerm":[
+					{
+						"description": "Tariff plan 12 Months commitment",
+						"name": "12Months",
+						"duration": {
+							"amount": 12,
+							"units": "month"
+						}
+					}
+				],
+                "relatedParty": [
+                    {
+                         "id": "9176",
+						"href": "https://mycsp.com:8080/tmf-api/customerManagement/v4/customer/9176",
+						"name": "Jack Smith",
+						"role": "customer",
+						"@referredType": "Customer"
+                    }
+                ]
+            },
+            "productOffering": {
+                "id": "142458",
+                "href": "https://mycsp.com:8080/tmf-api/productCatalogManagement/v4/productOffering/142458",
+                "name": "Talk Simple 25 - Weekend Add-on"
+            },
+        }
+    ]
+    "relatedParty": [
+        {
+            "id": "9176",
+            "href": "https://mycsp.com:8080/tmf-api/customerManagement/v4/customer/9176",
+            "name": "Jack Smith",
+            "role": "customer",
+            "@referredType": "Customer"
+        }
+    ],
+    "validFor": {
+        "endDateTime": "2021-03-24T07:41:53.450Z",
+        "startDateTime": "2021-03-24T07:41:53.450Z"
+    },
+    "@type": "ShoppingCartItem",
+    "@baseType": "OrbitantDocument"
+}

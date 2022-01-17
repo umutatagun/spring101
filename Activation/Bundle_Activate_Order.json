@@ -1,0 +1,278 @@
+{
+    "category": "product order",
+    "description": "Product Order Sample",
+    "externalId": "PM-456",
+    "priority": "1",
+    "requestedCompletionDate": "2021-05-19T14:00:03.171Z",
+	"requestedStartDate": "2021-05-19T14:00:03.171Z",
+    "note": [
+        {
+            "author": "Adnan Ekici",
+            "date": "2021-05-19T16:36:00.000Z",
+            "text": "This is a Sample product order illustration"
+        }
+    ],
+	"productOrderItem": [
+		{
+            "action": "add",
+            "quantity": 1,
+            "id": "100",
+			"itemPrice": [],
+            "productOffering": {
+                "id": "f0bb571d-ed95-46c6-9014-ecb38b946dc8",
+				"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOffering/f0bb571d-ed95-46c6-9014-ecb38b946dc8",
+				"name": "Vodafone 2IN1"
+            },
+			"productOrderItemRelationship": [
+                {
+                    "id":"110",
+                    "relationshipType": "bundles", /* order item related realtions such as bundles, reliesOn will be there */
+					 "@type": "productOfferingRelationship"
+                },
+                {
+                    "id":"120",
+                    "relationshipType": "bundles",
+					 "@type": "productOfferingRelationship"
+                }
+            ],
+            "product": {
+				"id": "b6956dc2",
+				"isBundle": true,
+				"name": "Vodafone 2IN1",
+				"agreement": [
+				  {
+					"id": "94a65b70-482d-4796-98ef-ba49cef21e82",
+					"href": "http://vf-orbitant-agreement-management-api-dev.dnext-vfal.com/api/agreementManagement/v4/agreement/94a65b70-482d-4796-98ef-ba49cef21e82",
+					"name": "Cash",
+					"@referredType": "Agreement"
+				  }
+				],
+				"billingAccount": {
+				  "id": "ab78e1b8-9b2f-4992-a236-5d21706795bd",
+				  "href": "https://dev.dnext-vfal.com/api/accountManagement/v4/billingAccount/ab78e1b8-9b2f-4992-a236-5d21706795bd",
+				  "name": "4d0d23aa-c9af-4b7d-b663-634ffe002d11",
+				  "@referredType": "BillingAccount"
+				},
+				"place": [],
+				"product": [],
+				"productCharacteristic": [],
+				"productOrderItem": [],
+				"productPrice": [],
+				"productRelationship": [],
+				"productTerm": [
+				  {
+					"name": "Cash",
+					"duration": {
+					  "amount": 0,
+					  "units": "SECOND"
+					}
+				  }
+				],
+				"realizingResource": [],
+				"realizingService": [],
+				"relatedParty": [
+				  {
+					"id": "b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"name": "ADNAN EKICI",
+					"role": "Customer",
+					"@referredType": "Customer"
+				  }
+				]
+			},
+            "@type": "ProductOrderItem"
+        },
+		{
+            "action": "add",
+            "quantity": 1,
+            "id": "110",
+			"itemPrice": [
+				{
+				  "description": "",
+				  "name": "Cash Tirana Web All 15MB ",
+				  "priceType": "One time charge",
+				  "recurringChargePeriod": "string",
+				  "unitOfMeasure": "EUR",
+				  "price": {
+					"dutyFreeAmount": {
+					  "unit": "AUD",
+					  "value": 150
+					},
+					"taxIncludedAmount": {
+					  "unit": "AUD",
+					  "value": 150
+					},
+					"@baseType": "Price",
+					"@type": "Price"
+				  },
+				  "productOfferingPrice": {
+					"id": "ded0635b-e8be-46ea-bb2e-f9f56666c2ff",
+					"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOfferingPrice/ded0635b-e8be-46ea-bb2e-f9f56666c2ff",
+					"name": "Cash Tirana Web All 15MB "
+				  }
+				}
+			],
+            "productOffering": {
+                "id": "39c6ef0e-8683-4f99-9c88-cee1080b1a8f",
+				"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOffering/39c6ef0e-8683-4f99-9c88-cee1080b1a8f",
+				"name": "Vodafone GigaFibra 15 Mbps"
+            },
+			"productOrderItemRelationship": [
+                {
+                    "id":"100",
+                    "relationshipType": "mandatoryOf", /* order item product related relations such as addonOf, mandatoryOf will be there */
+					 "@type": "productOfferingRelationship"
+                }
+            ],
+            "product": {
+				"id": "6637d918",
+				"isBundle": false,
+				"name": "Vodafone GigaFibra 15 Mbps",
+				"agreement": [
+				  {
+					"id": "94a65b70-482d-4796-98ef-ba49cef21e82",
+					"href": "http://vf-orbitant-agreement-management-api-dev.dnext-vfal.com/api/agreementManagement/v4/agreement/94a65b70-482d-4796-98ef-ba49cef21e82",
+					"name": "Cash",
+					"@referredType": "Agreement"
+				  }
+				],
+				"billingAccount": {
+				  "id": "ab78e1b8-9b2f-4992-a236-5d21706795bd",
+				  "href": "https://dev.dnext-vfal.com/api/accountManagement/v4/billingAccount/ab78e1b8-9b2f-4992-a236-5d21706795bd",
+				  "name": "4d0d23aa-c9af-4b7d-b663-634ffe002d11",
+				  "@referredType": "BillingAccount"
+				},
+				"place": [],
+				"product": [],
+				"productCharacteristic": [],
+				"productOrderItem": [],
+				"productPrice": [],
+				"productRelationship": [
+				],
+				"productSpecification": {
+				  "id": "faed2bfc-b65e-442e-b5bd-cfbf8b7b970b",
+				  "href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productSpecification/faed2bfc-b65e-442e-b5bd-cfbf8b7b970b",
+				  "name": "CableInternetSpec"
+				},
+				"productTerm": [
+				  {
+					"name": "Cash",
+					"duration": {
+					  "amount": 0,
+					  "units": "SECOND"
+					}
+				  }
+				],
+				"realizingResource": [],
+				"realizingService": [],
+				"relatedParty": [
+				  {
+					"id": "b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"name": "ADNAN EKICI",
+					"role": "Customer",
+					"@referredType": "Customer"
+				  }
+				]
+			},
+            "@type": "ProductOrderItem"
+        },
+		{
+            "action": "add",
+            "quantity": 1,
+            "id": "120",
+			"itemPrice": [
+				{
+				  "description": "",
+				  "name": "Cash Tirana Web All 15MB ",
+				  "priceType": "One time charge",
+				  "recurringChargePeriod": "string",
+				  "unitOfMeasure": "EUR",
+				  "price": {
+					"dutyFreeAmount": {
+					  "unit": "AUD",
+					  "value": 150
+					},
+					"taxIncludedAmount": {
+					  "unit": "AUD",
+					  "value": 150
+					},
+					"@baseType": "Price",
+					"@type": "Price"
+				  },
+				  "productOfferingPrice": {
+					"id": "ded0635b-e8be-46ea-bb2e-f9f56666c2ff",
+					"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOfferingPrice/ded0635b-e8be-46ea-bb2e-f9f56666c2ff",
+					"name": "Cash Tirana Web All 15MB "
+				  }
+				}
+			],
+            "productOffering": {
+                "id": "f8fdce6d-6990-4f44-a674-02904f3c4a5b",
+				"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOffering/f8fdce6d-6990-4f44-a674-02904f3c4a5b",
+				"name": "Vodafone TV Start"
+            },
+            "product": {
+				"id": "6221f22b",
+				"isBundle": false,
+				"name": "Vodafone TV Start",
+				"agreement": [
+				  {
+					"id": "94a65b70-482d-4796-98ef-ba49cef21e82",
+					"href": "http://vf-orbitant-agreement-management-api-dev.dnext-vfal.com/api/agreementManagement/v4/agreement/94a65b70-482d-4796-98ef-ba49cef21e82",
+					"name": "Cash",
+					"@referredType": "Agreement"
+				  }
+				],
+				"billingAccount": {
+				  "id": "ab78e1b8-9b2f-4992-a236-5d21706795bd",
+				  "href": "https://dev.dnext-vfal.com/api/accountManagement/v4/billingAccount/ab78e1b8-9b2f-4992-a236-5d21706795bd",
+				  "name": "4d0d23aa-c9af-4b7d-b663-634ffe002d11",
+				  "@referredType": "BillingAccount"
+				},
+				"place": [],
+				"product": [],
+				"productCharacteristic": [],
+				"productOrderItem": [],
+				"productPrice": [],
+				"productRelationship": [], /* if there is no relation or optional offer in bundle no need to put relationship */
+				"productSpecification": {
+				  "id": "22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+				  "href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productSpecification/22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+				  "name": "CableTVSpec"
+				},
+				"productTerm": [
+				  {
+					"name": "Cash",
+					"duration": {
+					  "amount": 0,
+					  "units": "SECOND"
+					}
+				  }
+				],
+				"realizingResource": [],
+				"realizingService": [],
+				"relatedParty": [
+				  {
+					"id": "b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"name": "ADNAN EKICI",
+					"role": "Customer",
+					"@referredType": "Customer"
+				  }
+				]
+			},
+            "@type": "ProductOrderItem"
+        }
+	],
+    "relatedParty": [ /* If referring to relatedParty at the order Level like fulfillment partner of the order */
+        {
+            "id": "b7beeb10",
+			"href": "https://dev.dnext-vfal.com/api/partnerManagement/v4/partner/b7beeb10",
+			"name": "ADNAN EKICI Shop",
+			"role": "Partner",
+			"@referredType": "Partner"
+        }
+    ],
+	"@type": "ProductOrder"
+}

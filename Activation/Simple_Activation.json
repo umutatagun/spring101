@@ -1,0 +1,78 @@
+{
+	"cartItem": [
+        {
+            "action": "add",
+            "quantity": 1,
+            "id": "500",
+			"itemPrice": [ /*  Bu kısma izin vermeyeceğiz */
+				{
+				  "description": "",
+				  "name": "Cash VOIP",
+				  "priceType": "One time charge",
+				  "recurringChargePeriod": "string",
+				  "unitOfMeasure": "EUR",
+				  "price": {
+					"dutyFreeAmount": {
+					  "unit": "AUD",
+					  "value": 15
+					},
+					"taxIncludedAmount": {
+					  "unit": "AUD",
+					  "value": 15
+					},
+					"@baseType": "Price",
+					"@type": "Price"
+				  },
+				  "productOfferingPrice": {/*  1. Opsiyon buraya izin verebiliriz */
+					"id": "5a8ff867-bc40-4270-b821-7acb42001e56",
+					"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOfferingPrice/5a8ff867-bc40-4270-b821-7acb42001e56",
+					"name": "Cash VOIP"
+				  }
+				}
+			],
+            "productOffering": {
+                "id": "61fe9cfa-ff1b-438b-b1be-09ba097af668",
+				"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOffering/61fe9cfa-ff1b-438b-b1be-09ba097af668",
+				"name": "VOIP"
+            },
+            "product": {
+				"id": "6deb83a3",
+				"isBundle": false,
+				"name": "VOIP",
+				"productCharacteristic": [
+				  {
+					"name": "SipPassword",
+					"value": "aefeg"
+				  },
+				  {
+					"name": "SipUser",
+					"value": "wefewf"
+				  },
+				  {
+					"name": "PhoneNumber",
+					"value": "64326436"
+				  }
+				],
+				"productOfferingPrice": {/*  2. Opsiyon buraya izin verebiliriz */
+					"id": "5a8ff867-bc40-4270-b821-7acb42001e56",
+					"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOfferingPrice/5a8ff867-bc40-4270-b821-7acb42001e56",
+					"name": "Cash VOIP"
+				  }
+				"productSpecification": {
+				  "id": "7b551bcd-12a6-47ad-b600-123d72996498",
+				  "href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productSpecification/7b551bcd-12a6-47ad-b600-123d72996498",
+				  "name": "VOIPProductSpec"
+				},
+				"relatedParty": [
+				  {
+					"id": "b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"name": "ADNAN EKICI",
+					"role": "Customer",
+					"@referredType": "Customer"
+				  }
+				]
+			}
+        }
+	]
+}

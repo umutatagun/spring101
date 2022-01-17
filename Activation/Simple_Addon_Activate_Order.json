@@ -1,0 +1,221 @@
+{
+    "category": "product order",
+    "description": "Product Order Sample",
+    "externalId": "PM-456",
+    "priority": "1",
+    "requestedCompletionDate": "2021-05-19T14:00:03.171Z",
+	"requestedStartDate": "2021-05-19T14:00:03.171Z",
+    "note": [
+        {
+            "author": "Adnan Ekici",
+            "date": "2021-05-19T16:36:00.000Z",
+            "text": "This is a Sample product order illustration"
+        }
+    ],
+	
+	"productOrderItem": [
+		{
+            "action": "add",
+            "quantity": 1,
+            "id": "200",
+			"itemPrice": [
+				{
+				  "description": "",
+				  "name": "Cash Tirana Web All FamilyTV ",
+				  "priceType": "One time charge",
+				  "recurringChargePeriod": "string",
+				  "unitOfMeasure": "EUR",
+				  "price": {
+					"dutyFreeAmount": {
+					  "unit": "AUD",
+					  "value": 200
+					},
+					"taxIncludedAmount": {
+					  "unit": "AUD",
+					  "value": 200
+					},
+					"@baseType": "Price",
+					"@type": "Price"
+				  },
+				  "productOfferingPrice": {
+					"id": "473856a7-ea18-40da-a49f-bde928b99326",
+					"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOfferingPrice/473856a7-ea18-40da-a49f-bde928b99326",
+					"name": "Cash Tirana Web All FamilyTV "
+				  }
+				}
+			],
+            "orderItemRelationship": [
+					{
+						"id": "210",
+						"relationshipType": "hasAddon",
+						"@type": "productOfferingRelationship"
+					}
+			],
+			"productOffering": {
+                "id": "f8fdce6d-6990-4f44-a674-02904f3c4a5b",
+				"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOffering/f8fdce6d-6990-4f44-a674-02904f3c4a5b",
+				"name": "Vodafone TV Start"
+            },
+            "product": {
+				"id": "8e9d8f8d",
+				"isBundle": false,
+				"name": "Vodafone TV Start",
+				"agreement": [
+				  {
+					"id": "e5f273e1-8dda-4f9a-b9e5-446fee87cefd",
+					"href": "http://vf-orbitant-agreement-management-api-dev.dnext-vfal.com/api/agreementManagement/v4/agreement/e5f273e1-8dda-4f9a-b9e5-446fee87cefd",
+					"name": "Cash",
+					"@referredType": "Agreement"
+				  }
+				],
+				"billingAccount": {
+				  "id": "be6c8d61-698e-4be1-944a-c35910a145ae",
+				  "href": "/api/accountManagement/v4/billingAccount/be6c8d61-698e-4be1-944a-c35910a145ae",
+				  "name": "649c934b-ccd4-408b-a248-1ca44fed9792",
+				  "@referredType": "BillingAccount"
+				},
+				"place": [],
+				"product": [],
+				"productCharacteristic": [
+				  {
+					"name": "TVInfrastructure",
+					"value": "Cryptoguard"
+				  }
+				],
+				"productOrderItem": [],
+				"productPrice": [],
+				"productRelationship": [
+				],
+				"productSpecification": {
+				  "id": "22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+				  "href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productSpecification/22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+				  "name": "CableTVSpec"
+				},
+				"productTerm": [
+				  {
+					"name": "Cash",
+					"duration": {
+					  "amount": 0,
+					  "units": "SECOND"
+					}
+				  }
+				],
+				"realizingResource": [],
+				"realizingService": [],
+				"relatedParty": [
+				  {
+					"id": "b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"name": "ADNAN EKICI",
+					"role": "Customer",
+					"@referredType": "Customer"
+				  }
+				]
+			},
+            "@type": "ProductOrderItem"
+        },
+		{
+            "action": "add",
+            "quantity": 1,
+            "id": "210",
+			"itemPrice": [
+				{
+				  "description": "",
+				  "name": "Cash Tirana Web All FamilyTV ",
+				  "priceType": "One time charge",
+				  "recurringChargePeriod": "string",
+				  "unitOfMeasure": "EUR",
+				  "price": {
+					"dutyFreeAmount": {
+					  "unit": "AUD",
+					  "value": 200
+					},
+					"taxIncludedAmount": {
+					  "unit": "AUD",
+					  "value": 200
+					},
+					"@baseType": "Price",
+					"@type": "Price"
+				  },
+				  "productOfferingPrice": {
+					"id": "473856a7-ea18-40da-a49f-bde928b99326",
+					"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOfferingPrice/473856a7-ea18-40da-a49f-bde928b99326",
+					"name": "Cash Tirana Web All FamilyTV "
+				  }
+				}
+			],
+            "productOffering": {
+                "id": "4ed6e26b-bcec-4a98-a82f-e8283f85708c",
+				"href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOffering/4ed6e26b-bcec-4a98-a82f-e8283f85708c",
+				"name": "National Football League"
+            },
+            "product": {
+				"id": "91a53923",
+				"isBundle": false,
+				"name": "National Football League",
+				"agreement": [
+				  {
+					"id": "e5f273e1-8dda-4f9a-b9e5-446fee87cefd",
+					"href": "http://vf-orbitant-agreement-management-api-dev.dnext-vfal.com/api/agreementManagement/v4/agreement/e5f273e1-8dda-4f9a-b9e5-446fee87cefd",
+					"name": "Cash",
+					"@referredType": "Agreement"
+				  }
+				],
+				"billingAccount": {
+				  "id": "be6c8d61-698e-4be1-944a-c35910a145ae",
+				  "href": "/api/accountManagement/v4/billingAccount/be6c8d61-698e-4be1-944a-c35910a145ae",
+				  "name": "649c934b-ccd4-408b-a248-1ca44fed9792",
+				  "@referredType": "BillingAccount"
+				},
+				"place": [],
+				"product": [],
+				"productCharacteristic": [
+				  {
+					"name": "TVInfrastructure",
+					"value": "Cryptoguard"
+				  }
+				],
+				"productOrderItem": [],
+				"productPrice": [],
+				"productRelationship": [],
+				"productSpecification": {
+				  "id": "22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+				  "href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productSpecification/22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+				  "name": "CableTVSpec"
+				},
+				"productTerm": [
+				  {
+					"name": "Cash",
+					"duration": {
+					  "amount": 0,
+					  "units": "SECOND"
+					},
+					"@schemaLocation": "http://dev.dnext-vfal.com/api/static/schema/productofferingterm.json"
+				  }
+				],
+				"realizingResource": [],
+				"realizingService": [],
+				"relatedParty": [
+				  {
+					"id": "b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+					"name": "ADNAN EKICI",
+					"role": "Customer",
+					"@referredType": "Customer"
+				  }
+				]
+			},
+            "@type": "ProductOrderItem"
+        }
+	],
+    "relatedParty": [
+        {
+            "id": "b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+			"href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/b7beeb10-43e7-44cc-9e24-60fa6c0f6579",
+			"name": "ADNAN EKICI",
+			"role": "Customer",
+			"@referredType": "Customer"
+        }
+    ],
+	"@type": "ProductOrder"
+}

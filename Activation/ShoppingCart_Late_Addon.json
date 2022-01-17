@@ -1,0 +1,73 @@
+{
+	"cartItem": [
+        {
+            "action": "add",
+            "quantity": 1,
+            "status": "active",
+            "id": "110",
+            "itemPrice": [],
+			"note": [],
+            "product": {
+                "isBundle": false,
+                "name": "National League",
+                "productCharacteristic": [
+                    {
+                        "name": "TVInfrastucture",
+                        "valueType": "string",
+                        "value": "ABEL"
+                    }
+                ],
+				"productSpecification": {
+                    "id": "22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+                    "href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productSpecification/22ca02f1-5f7c-4e0a-b179-7789f477dd80",
+                    "name": "CableTVSpec",
+                    "@referredType": "ProductSpecification"
+                },
+				"productRelationship": [
+					{
+						"@type": "productOfferingRelationship",
+						"relationshipType": "addonOf",
+                        "product":{
+                            "id": "dcf4e5a2-893f-43e6-8425-9c1d330b3821",
+                            "href": "https://dev.dnext-vfal.com/api/productInventoryManagement/v4/product/dcf4e5a2-893f-43e6-8425-9c1d330b3821"
+                        }
+					}
+				],
+				"productTerm":[
+					{
+						"name": "Cash",
+                        "duration": {
+                            "amount": 0.0,
+                            "units": "SECOND"
+                        }
+					}
+				],
+                "relatedParty": [
+                    {
+                        "id": "03344ad4-1a54-4338-9e33-70bfe33a63aa",
+                        "href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/03344ad4-1a54-4338-9e33-70bfe33a63aa",
+                        "name": "SANDRA GOLD",
+                        "role": "customer",
+                        "@referredType": "Customer"
+                    }
+                ]
+            },
+            "productOffering": {
+                "id": "4ed6e26b-bcec-4a98-a82f-e8283f85708c",
+                "href": "https://dev.dnext-vfal.com/api/productCatalogManagement/v4/productOffering/4ed6e26b-bcec-4a98-a82f-e8283f85708c",
+                "name": "Talk Simple 25 - Weekend Add-on"
+            }
+        }
+    ],
+    "relatedParty": [
+        {
+            "id": "03344ad4-1a54-4338-9e33-70bfe33a63aa",
+            "href": "https://dev.dnext-vfal.com/api/customerManagement/v4/customer/03344ad4-1a54-4338-9e33-70bfe33a63aa",
+            "name": "SANDRA GOLD",
+            "role": "customer",
+            "@referredType": "Customer"
+        }
+    ],
+    "@type": "ShoppingCartItem",
+    "@baseType": "OrbitantDocument"
+}
